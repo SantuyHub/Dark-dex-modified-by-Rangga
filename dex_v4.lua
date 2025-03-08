@@ -27,7 +27,7 @@ local service = setmetatable({}, ServicesMt)
 
 local Decompile do
   local Success, Decompile_Source = pcall(function()
-    return game:HttpGet("https://raw.githubusercontent.com/w-a-e/Advanced-Decompiler-V3/main/init.lua", true)
+    return game:HttpGet("https://raw.githubusercontent.com/076c/Advanced-Decompiler-V3/refs/heads/main/init.lua", true)
   end)
   
   if Success then
@@ -39,7 +39,7 @@ local ENABLED_REMARKS = {
 
 local DECOMPILER_TIMEOUT = 10
 
-local READER_FLOAT_PRECISION = 7 -- up to 99
+local READER_FLOAT_PRECISION = 99 -- up to 99
 local SHOW_INSTRUCTION_LINES = false
 local SHOW_REFERENCES = true
 local SHOW_OPERATION_NAMES = false
